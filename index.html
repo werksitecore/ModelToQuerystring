@@ -13,16 +13,6 @@
     <![endif]-->
   </head>
   <body>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-87925318-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
     <div class="wrapper">
       <header>
         <h1>Model to Querystring</h1>
@@ -41,15 +31,17 @@
         <h1>
 <a id="model-to-querystring" class="anchor" href="#model-to-querystring" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Model to Querystring</h1>
 
+<p><a href="https://ci.appveyor.com/project/sanalmenon/modeltoquerystring"><img src="https://ci.appveyor.com/api/projects/status/10heht0fm1vydgsc?svg=true" alt="Build status"></a>  </p>
+
 <p>Model to Querystring is an extension method, which will help you to generate the Querystring from the model. This is a very useful extension to use when working with Web API or systems with multiple web API calls.</p>
 
 <h2>
 <a id="query-parameter-attribute" class="anchor" href="#query-parameter-attribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Query Parameter Attribute</h2>
 
-<p>QueryParameter gives you the flexibility to control the querystring parameters that you are generating. Either by changing property name to a different name or you can ignore the entire property while generating.</p>
+<p>QueryParameter gives you the flexibility to control the querystring parameters that you are generating. Either by changing property name to a different name or you can ignore the entire property while generating querystring parameters.</p>
 
 <ol>
-<li>some cases the property name we created in the Model and expected querystring property name might be different<br>
+<li>some cases we have the model property name and expected querystring property name might be different<br>
 </li>
 <li>or, we do not require the property to be added to the querystring</li>
 </ol>
@@ -82,7 +74,7 @@ public int EmployeeId { get; set; }
 <h2>
 <a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h2>
 
-<p>Read the below complex model structure I used in this project for the demo</p>
+<p>Read the below complex model structure we used in this project for the demo</p>
 
 <h3>
 <a id="creating-model-class" class="anchor" href="#creating-model-class" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating Model Class</h3>
@@ -147,14 +139,12 @@ var result = model.ToQueryString();
 
 <pre><code>eId=1&amp;joiningDate=22-11-2016&amp;EmployeeName=Some one&amp;AddressInfo.Address1=506, some building&amp;AddressInfo.Address2=some street, area&amp;AddressInfo.City=Dubai&amp;AddressInfo.State=Dubai&amp;AddressInfo.Country=United Arab Emirates&amp;pageId=1&amp;pageSize=10
 </code></pre>
-<hr>
+
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Me</h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
 <p>Sanal Menon Kalipurayath (<a href="https://github.com/sanalmenon" class="user-mention">@sanalmenon</a>)<br>
-Senior Technical Engineer | <a href="http://www.indivirtualdubai">Indivirtual Dubai</a><br>
 <strong>Web:</strong> <a href="http://sanal.menon.me">sanal.menon.me</a><br>
-<strong>Skype:</strong> sanal.menon.me<br>
 <strong>LinkedIn:</strong> <a href="https://in.linkedin.com/menon">https://in.linkedin.com/menon</a><br>
 <strong>Twitter:</strong> <a href="https://www.twitter.com/sanalmenon">https://www.twitter.com/sanalmenon</a>  </p>
       </section>
